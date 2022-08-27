@@ -1,0 +1,72 @@
+:root {
+  --first-color: #1ade89;
+  --second-color: #304651;
+  --third-color: #ddf1ec;
+
+}
+
+.section {
+  padding: 4rem;
+}
+
+.background-first {
+  background-color: var(--first-color);
+}
+
+.background-second {
+  background-color: var(--second-color);
+}
+
+.background-third {
+  background-color: var(--third-color);
+}
+
+.background-img-1 {
+  background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/shape%2Fcover%2Fsport%2F87226-gettyimages-1247734973-fb624124040b7676d4da16f7b3666048.jpg);
+  object-fit: contain;
+  background-position: center;
+}
+
+.disapearing-text {
+  border-left: solid .5rem;
+  border-color: var(--first-color);
+}
+
+.graph-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--third-color);
+  position: absolute;
+  top: 880px;
+  right: 12px;
+  width: 56vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.info-picture {
+  object-fit: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.font-new {
+  font-family: cursive;
+}
+
+@media screen AND (max-width: 768px) {
+  .graph-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1px;
+    width: 56vw;
+    right: -11%;
+  }
+
+  .disapearing-text {
+    display: none;
+  }
+}
